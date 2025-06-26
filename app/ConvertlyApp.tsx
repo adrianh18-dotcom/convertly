@@ -11,7 +11,7 @@ export default function ConvertlyApp() {
   const [width, setWidth] = useState(0);
   const [height, setHeight] = useState(0);
 
-  const inputRef = useRef();
+  const inputRef = useRef<HTMLInputElement | null>(null);
 
   const supportedFormats = ["jpg", "jpeg", "png", "webp", "bmp", "gif", "tiff"];
 
