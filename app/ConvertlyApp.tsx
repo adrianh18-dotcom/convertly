@@ -31,7 +31,7 @@ export default function ConvertlyApp() {
     const reader = new FileReader();
     reader.onload = (e) => {
       const img = new Image();
-      img.src = e.target.result;
+      img.src = e.target.result as string;
       img.onload = () => {
         const canvas = document.createElement("canvas");
         canvas.width = width > 0 ? width : img.width;
